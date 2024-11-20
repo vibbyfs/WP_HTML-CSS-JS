@@ -33,23 +33,53 @@ var swiper = new Swiper(".bestseller__container", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
+  // slidesPerView: 3,
+  // slidesPerGroup: 1,
+  // loop: true,
+  // loopedSlides: 1,
   spaceBetween: 20,
-  initialSlide: 3,
+  // initialSlide: 0,
   coverflowEffect: {
     rotate: 0,
+    stretch: 0,
+    depth: 0,
+    modifier: 0,
+    slideShadow: true,
+  },
+
+  navigation: {
+    nextE1: ".swiper__next",
+    prevE1: ".swiper__prev",
+  },
+  keyboard: {
+    enable: true,
+  },
+  mousewheel: {
+    thresholDelta: 70,
+  },
+  breakpoints: {
+    560: {
+      slidesPerView: 2.5,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
 });
 
 var swiper = new Swiper(".review__container", {
   effect: "coverflow",
   grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
+  // centeredSlides: true,
+  slidesPerView: 2,
+  // slidesPerGroup: 1,
+  // loop: true,
+  // loopedSlides: 1,
   spaceBetween: 20,
-  initialSlide: 3,
+  // initialSlide: 0,
   coverflowEffect: {
     rotate: 0,
   },
