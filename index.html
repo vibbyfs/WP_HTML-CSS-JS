@@ -82,10 +82,11 @@
               Every pie we made is a work of art. Our pies hancrafted with
               passion and love by our dedicated kitchen team.
             </p>
-
-            <button class="home__button">
-              <a href="#">Marketplace</a>
-            </button>
+            <div class="home__btn">
+              <button class="home__button">
+                <a href="#">Marketplace</a>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -93,12 +94,13 @@
 
       <!-- BEST SELLER PAGE -->
       <section class="bestseller section" id="bestseller">
-        <h2 class="section__title1">Our Customer Really Like It!</h2>
-        <p class="section__title2">
-          They praise its quality, delicious flavor, and perfect crust. They
-          absolutely love our pie.
-        </p>
-
+        <div class="bestseller__data">
+          <h2 class="section__title1">Our Customer Really Like It!</h2>
+          <p class="section__title2">
+            They praise its quality, delicious flavor, and perfect crust. They
+            absolutely love our pie.
+          </p>
+        </div>
         <div class="bestseller__container container swiper">
           <div class="swiper-wrapper">
             <!--==================== BEST SELLER 1 ====================-->
@@ -158,11 +160,14 @@
 
       <!-- REVIEW PAGE-->
       <section class="review section" id="review">
-        <h2 class="review__subtitle section__title1">Their Stories About Us</h2>
-        <p class="review__subtitle section__title2">
-          Great things are happening! Can not wait to share more with you.
-        </p>
-
+        <div class="review__subtitlegrup">
+          <h2 class="review__subtitle section__title1">
+            Their Stories About Us
+          </h2>
+          <p class="review__subtitle section__title2">
+            Great things are happening! Can not wait to share more with you.
+          </p>
+        </div>
         <div class="review__container container swiper-container">
           <div class="swiper-wrapper">
             <div class="review__card swiper-slide">
@@ -175,16 +180,18 @@
                     you coming back for more.
                   </p>
                 </div>
-                <div class="review__img">
-                  <img
-                    src="./assets/img/user/user1.jpg"
-                    alt=""
-                    class="review__img-cust"
-                  />
-                </div>
-                <div class="review__data">
-                  <h4 class="review__name">Albert</h4>
-                  <h4 class="review__location">West Jakarta</h4>
+                <div class="review__imgdata">
+                  <div class="review__img">
+                    <img
+                      src="./assets/img/user/user1.jpg"
+                      alt=""
+                      class="review__img-cust"
+                    />
+                  </div>
+                  <div class="review__data">
+                    <h4 class="review__name">Albert</h4>
+                    <h4 class="review__location">West Jakarta</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -362,6 +369,8 @@
       ><i class="fa-solid fa-arrow-up scrollup__icon"></i
     ></a>
 
+    <!-- SCROLL REVEAL -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
     <!-- SWIPER JS -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- MY SCRIPT -->
