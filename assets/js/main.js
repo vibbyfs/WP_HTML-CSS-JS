@@ -61,3 +61,69 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+/*==================== SCROLL REVEAL ====================*/
+// const sr = ScrollReveal({
+//   distance: "50px",
+//   duration: 1000,
+//   reset: true,
+// });
+
+// sr.reveal(`.home__data`, {
+//   origin: "top",
+//   interval: 100,
+// });
+
+// sr.reveal(`.journey__data`, {
+//   origin: "left",
+// });
+
+// sr.reveal(`.journey__img-overlay`, {
+//   origin: "right",
+//   interval: 100,
+// });
+
+// sr.reveal(`.customer__img`, {
+//   origin: "top",
+//   delay: 300,
+// });
+
+const scrollRevealOption = {
+  distance: "50px",
+  duration: 2000,
+  reset: true,
+};
+
+ScrollReveal().reveal(".home__data", {
+  ...scrollRevealOption,
+  origin: "top",
+});
+
+ScrollReveal().reveal(".bestseller__data", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 400,
+});
+
+ScrollReveal().reveal(".journey__data", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+
+ScrollReveal().reveal(".journey__img-overlay", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 200,
+});
+
+ScrollReveal().reveal(".review__subtitlegrup", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 400,
+});
+
+ScrollReveal().reveal(".customer__content", {
+  ...scrollRevealOption,
+  origin: "top",
+  interval: 200,
+});
