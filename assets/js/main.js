@@ -85,7 +85,7 @@ window.addEventListener("scroll", scrollUp);
 
 // sr.reveal(`.customer__img`, {
 //   origin: "top",
-//   delay: 300,
+//   delay: 100,
 // });
 
 const scrollRevealOption = {
@@ -102,7 +102,7 @@ ScrollReveal().reveal(".home__data", {
 ScrollReveal().reveal(".bestseller__data", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 400,
+  delay: 100,
 });
 
 ScrollReveal().reveal(".journey__data", {
