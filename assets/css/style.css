@@ -184,6 +184,11 @@ input {
   align-content: center;
 }
 
+.home__data {
+  width: 50%;
+  margin-left: 2rem;
+}
+
 .home__subtitle,
 .home__title {
   color: var(--white);
@@ -199,22 +204,21 @@ input {
 }
 
 .home__button {
-  position: absolute;
-  bottom: 225px;
-}
-
-.button {
   background-color: var(--orange-dark);
-  color: var(--white);
   padding: 0.5rem 1rem;
   transition: 0.3s;
   border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  outline: none;
+  border: none;
+  margin-top: 0.5rem;
 }
 
-.button:hover {
+.home__button:hover {
   background-color: var(--orange-light);
+}
+
+.home__button a {
+  color: var(--white);
 }
 
 /* WHATSAPP POP UP */
@@ -303,14 +307,16 @@ input {
 .swiper-pagination-bullet {
   background: var(--blue-dark);
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   margin: 0 5px;
   opacity: 0.4;
   z-index: 1;
 }
 
 .swiper-pagination-bullet-active {
+  width: 7px;
+  height: 7px;
   opacity: 1;
   background: #007bff;
 }
@@ -319,6 +325,11 @@ input {
 .journey__data {
   text-align: center;
   color: var(--grey-dark);
+}
+
+.journey__title span {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .journey__img {
@@ -340,8 +351,8 @@ input {
   overflow: hidden;
 }
 
-.review__subtitle {
-  margin: 1rem 0;
+.review__container {
+  margin-top: 2rem;
 }
 
 .review__card-main {
@@ -352,7 +363,7 @@ input {
   text-align: center;
   width: 300px;
   height: 425px;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -360,7 +371,7 @@ input {
 }
 
 .review__content {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .review__img-cust {
@@ -380,14 +391,16 @@ input {
 .review-pagination .swiper-pagination-bullet {
   background: var(--blue-dark);
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   margin: 0 5px;
   opacity: 0.4;
   z-index: 1;
 }
 
 .review-pagination .swiper-pagination-bullet-active {
+  width: 7px;
+  height: 7px;
   opacity: 1;
   background: #007bff;
 }
@@ -404,7 +417,7 @@ input {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 1rem 0;
+  margin-top: 2rem;
 }
 
 .customer__content {
@@ -538,10 +551,7 @@ input {
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
-  .home__data {
-    width: 60%;
-  }
+@media screen and (min-width: 341px) and (max-width: 767px) {
   .journey__container {
     display: flex;
     justify-content: center;
@@ -556,11 +566,6 @@ input {
   }
   .footer__content {
     gap: 1.5rem;
-  }
-  .footer__rights {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
   }
 }
 
@@ -602,9 +607,7 @@ input {
   .scroll-header .active-link::before {
     background-color: var(--grey-ligth);
   }
-  .home__data {
-    margin-left: 2rem;
-  }
+
   .bestseller__container {
     margin-top: 2rem;
   }
@@ -614,14 +617,13 @@ input {
     justify-content: space-around;
     align-items: center;
   }
+  .journey__subtitle {
+    margin-bottom: 0.5rem;
+  }
   .journey__data .journey__subtitle,
   .journey__title {
-    width: 300px;
+    width: 350px;
     text-align: initial;
-    padding: 0;
-  }
-  .journey__subtitle {
-    margin-bottom: 1rem;
   }
   .footer__container {
     margin: 0;
@@ -640,23 +642,26 @@ input {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
+  .nav {
+    display: flex;
+    justify-content: space-between;
   }
-
   .footer__content {
     justify-items: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  .nav__container {
+  .nav {
     justify-content: space-between;
+  }
+  .bestseller {
+    margin-top: 2rem;
+  }
+  .journey__data .journey__subtitle,
+  .journey__title {
+    width: 500px;
+    text-align: initial;
   }
 }
 
