@@ -198,13 +198,12 @@ a {
 
 .home__subtitle {
   display: block;
-  font-size: 2rem;
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .home__title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--white);
 }
 
