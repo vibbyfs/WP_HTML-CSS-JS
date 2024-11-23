@@ -533,8 +533,8 @@ a {
   position: fixed;
   right: 50%;
   bottom: -20%;
-  background-color: var(--orange-dark);
-  padding: 0.5rem;
+  background-color: var(--orange-light);
+  padding: 0.3rem;
   display: flex;
   opacity: 0.7;
   z-index: 1;
