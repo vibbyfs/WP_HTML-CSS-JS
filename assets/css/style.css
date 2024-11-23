@@ -68,7 +68,7 @@ a {
 .section__title2 {
   color: var(--grey-dark);
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 1rem;
 }
 
@@ -188,7 +188,7 @@ a {
 
 .home__container {
   position: relative;
-  height: calc(100vh - -2rem);
+  height: calc(100vh - 2rem);
   align-content: center;
 }
 
@@ -203,7 +203,7 @@ a {
 }
 
 .home__title {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--white);
 }
 
@@ -211,7 +211,7 @@ a {
   background-color: var(--orange-dark);
   padding: 0.5rem 1rem;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 20px;
   outline: none;
   border: none;
   margin-top: 0.5rem;
@@ -224,6 +224,8 @@ a {
 .home__button a {
   color: var(--white);
   font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* WHATSAPP POP UP */
@@ -332,6 +334,11 @@ a {
 }
 
 /* ============= JOURNEY PAGE ============= */
+.journey__container {
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .journey__data {
   text-align: center;
   color: var(--grey-dark);
@@ -378,8 +385,16 @@ a {
 }
 
 .review__img-cust {
-  width: 100px;
+  width: 70px;
   border-radius: 100%;
+}
+
+.review__content {
+  font-size: 0.9rem;
+}
+
+.review__data {
+  font-size: 0.8rem;
 }
 
 .review-pagination {
@@ -409,6 +424,12 @@ a {
 }
 
 /* ============= CUSTOMER PAGE ============= */
+.customer__container1 {
+  margin: 0 1rem;
+  padding: 2rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .customer .subtitle {
   color: var(--grey-dark);
   text-align: center;
@@ -460,13 +481,13 @@ a {
 }
 
 .footer__title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 5px;
   color: var(--grey-dark);
 }
 
 .footer__description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--grey-ligth);
 }
 
@@ -481,7 +502,7 @@ a {
 
 .footer__contact span {
   color: var(--grey-dark);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .footer__rights {
