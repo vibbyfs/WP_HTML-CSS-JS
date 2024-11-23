@@ -40,17 +40,13 @@ a {
   text-decoration: none;
 }
 
-input {
-  outline: none;
-}
-
 .main {
   overflow-x: hidden;
 }
 
 /* ============= CSS CLASSES PAGE ============= */
 .section {
-  padding: 4rem 0 2rem;
+  padding: 3.5rem 0 2rem;
 }
 
 .container {
@@ -58,15 +54,20 @@ input {
 }
 
 .section__title1 {
-  color: var(--grey-dark);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--blue-dark);
+  /* color: transparent; */
+  /* background-color: transparent; */
+  /* -webkit-text-stroke: 1px var(--blue-dark); */
+  /* text-shadow: 0 0 2px; */
+  letter-spacing: 1px;
 }
 
 .section__title2 {
-  color: var(--grey-ligth);
+  color: var(--grey-dark);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* ============= HEADER PAGE ============= */
@@ -76,7 +77,9 @@ input {
   top: 0;
   left: 0;
   z-index: 9;
-  height: 3rem;
+  height: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* ============= NAV PAGE ============= */
@@ -84,12 +87,13 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
+  margin: 0 2.5rem;
 }
 
 .nav__logo {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--white);
 }
 
@@ -116,15 +120,16 @@ input {
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .nav__link {
-  color: var(--grey-dark);
+  color: var(--blue-dark);
+  font-weight: 600;
 }
 
 .nav__link:hover {
-  color: var(--grey-ligth);
+  color: var(--blue-light);
 }
 
 .nav__close {
@@ -132,7 +137,7 @@ input {
   top: 0.75rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--grey-dark);
+  color: var(--blue-dark);
   cursor: pointer;
 }
 
@@ -143,13 +148,13 @@ input {
 
 .active-link {
   position: relative;
-  color: var(--grey-dark);
+  color: var(--blue-light);
 }
 
 .active-link::before {
   content: "";
   position: absolute;
-  background-color: var(--grey-ligth);
+  background-color: var(--blue-light);
   width: 100%;
   height: 1px;
   bottom: -0.25rem;
@@ -164,7 +169,7 @@ input {
 
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
-  color: var(--grey-dark);
+  color: var(--blue-dark);
 }
 
 /* ============= HOME PAGE ============= */
@@ -185,29 +190,27 @@ input {
 }
 
 .home__data {
-  width: 50%;
+  width: 65%;
   margin-left: 2rem;
-}
-
-.home__subtitle,
-.home__title {
-  color: var(--white);
 }
 
 .home__subtitle {
   display: block;
   font-size: 2rem;
+  color: var(--white);
+  font-size: 3rem;
 }
 
 .home__title {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 .home__button {
   background-color: var(--orange-dark);
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.2rem;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
   border: none;
   margin-top: 0.5rem;
@@ -219,6 +222,7 @@ input {
 
 .home__button a {
   color: var(--white);
+  font-size: 1.5rem;
 }
 
 /* WHATSAPP POP UP */
@@ -230,6 +234,10 @@ input {
   z-index: 7;
   opacity: 0;
   animation: fade-up 3000ms forwards;
+}
+
+.whatsapp-btn-container span {
+  color: #25d366;
 }
 
 .whatsapp-us-btn {
@@ -279,6 +287,7 @@ input {
 .bestseller__img {
   width: 300px;
   transition: var(--img-transition);
+  border-radius: 20px;
 }
 
 .bestseller__img:hover {
@@ -349,9 +358,6 @@ input {
 /* ============= REVIEW PAGE ============= */
 .review__container {
   overflow: hidden;
-}
-
-.review__container {
   margin-top: 2rem;
 }
 
@@ -362,7 +368,7 @@ input {
   align-items: center;
   text-align: center;
   width: 300px;
-  height: 400px;
+  height: 350px;
   padding: 10px 20px;
   background-color: var(--white);
   border-radius: 20px;
@@ -441,7 +447,8 @@ input {
 .footer__container {
   display: grid;
   margin-bottom: 3rem;
-  border-top: 1px solid var(--grey-ligth);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .footer__content {
@@ -483,7 +490,7 @@ input {
   row-gap: 1.5rem;
   padding: 10px 0;
   text-align: center;
-  background-color: var(--blue-dark);
+  border-top: 1px solid var(--grey-ligth);
 }
 
 .footer__copy,
@@ -603,16 +610,16 @@ input {
     background-color: var(--grey-ligth);
   }
   .scroll-header .nav__link {
-    color: var(--grey-dark);
+    color: var(--blue-dark);
   }
   .scroll-header .nav__link:hover {
-    color: var(--grey-ligth);
+    color: var(--blue-light);
   }
   .scroll-header .active-link {
-    color: var(--grey-dark);
+    color: var(--blue-dark);
   }
   .scroll-header .active-link::before {
-    background-color: var(--grey-ligth);
+    background-color: var(--blue-ligth);
   }
 
   .bestseller__container {
