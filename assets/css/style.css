@@ -203,13 +203,13 @@ a {
 }
 
 .home__title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--white);
 }
 
 .home__button {
   background-color: var(--orange-dark);
-  padding: 0.8rem 1.2rem;
+  padding: 0.5rem 1rem;
   transition: 0.3s;
   border-radius: 10px;
   outline: none;
@@ -223,7 +223,7 @@ a {
 
 .home__button a {
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
 /* WHATSAPP POP UP */
