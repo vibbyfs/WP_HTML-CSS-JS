@@ -62,12 +62,14 @@ a {
   /* -webkit-text-stroke: 1px var(--blue-dark); */
   /* text-shadow: 0 0 2px; */
   letter-spacing: 1px;
+  margin: 0 1rem;
 }
 
 .section__title2 {
   color: var(--grey-dark);
   text-align: center;
   font-size: 1.3rem;
+  margin: 0 1rem;
 }
 
 /* ============= HEADER PAGE ============= */
@@ -121,6 +123,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .nav__link {
@@ -190,8 +193,7 @@ a {
 }
 
 .home__data {
-  width: 65%;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .home__subtitle {
@@ -229,7 +231,7 @@ a {
 .whatsapp-btn-container {
   position: fixed;
   right: 1px;
-  bottom: -50px;
+  bottom: -100px;
   padding: 24px;
   z-index: 7;
   opacity: 0;
@@ -237,11 +239,11 @@ a {
 }
 
 .whatsapp-btn-container span {
-  color: #25d366;
+  color: var(--black);
 }
 
 .whatsapp-us-btn {
-  font-size: 40px;
+  font-size: 50px;
   color: #25d366;
   display: inline-block;
   transition: all 200ms;
@@ -270,7 +272,7 @@ a {
 
 @keyframes fade-up {
   100% {
-    bottom: 3rem;
+    bottom: -25px;
     opacity: 1;
   }
 }
@@ -529,7 +531,7 @@ a {
 }
 
 .show-scroll {
-  bottom: 5.5rem;
+  bottom: 20px;
 }
 
 /* SCROLL BAR */
@@ -549,6 +551,9 @@ a {
 /* ============= MEDIA QUERIES PAGE ============= */
 /* For small devices */
 @media screen and (max-width: 340px) {
+  .home__data {
+    margin: 0;
+  }
   .journey__container {
     display: flex;
     justify-content: center;
@@ -565,6 +570,12 @@ a {
   }
   .section__title2 {
     margin-bottom: 1rem;
+  }
+  .nav__list {
+    margin-top: 2.5rem;
+  }
+  .home__data {
+    width: 70%;
   }
   .journey__container {
     display: flex;
@@ -601,6 +612,7 @@ a {
   .nav__list {
     flex-direction: row;
     column-gap: 1.5rem;
+    margin-top: 0;
   }
   .nav__toggle,
   .nav__close {
@@ -621,7 +633,9 @@ a {
   .scroll-header .active-link::before {
     background-color: var(--blue-ligth);
   }
-
+  .home__data {
+    width: 65%;
+  }
   .bestseller__container {
     margin-top: 2rem;
   }
@@ -636,7 +650,7 @@ a {
   }
   .journey__data .journey__subtitle,
   .journey__title {
-    width: 350px;
+    width: 450px;
     text-align: initial;
   }
   .footer__container {
@@ -660,6 +674,11 @@ a {
     display: flex;
     justify-content: space-between;
   }
+  .journey__data .journey__subtitle,
+  .journey__title {
+    width: 600px;
+    text-align: initial;
+  }
   .footer__content {
     justify-items: center;
   }
@@ -677,7 +696,7 @@ a {
   }
   .journey__data .journey__subtitle,
   .journey__title {
-    width: 500px;
+    width: 600px;
     text-align: initial;
   }
 }
