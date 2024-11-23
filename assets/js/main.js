@@ -56,14 +56,34 @@ var swiper = new Swiper(".review__container", {
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 200) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
+  const footer = document.getElementById("footer-rights");
+
+  // Posisi bawah dari jendela viewport
+  const windowBottom = window.innerHeight + window.scrollY;
+  // Posisi atas dari footer
+  const footerTop = footer.offsetTop;
+
+  // Ketika scroll lebih tinggi dari 200 viewport height, tambahkan kelas show-scroll
+  if (this.scrollY >= 200) {
+    scrollUp.classList.add("show-scroll");
+  } else {
+    scrollUp.classList.remove("show-scroll");
+  }
+
+  // Sembunyikan tombol scroll-up ketika mencapai footer
+  if (windowBottom >= footerTop) {
+    scrollUp.style.display = "none";
+  } else {
+    scrollUp.style.display = "block";
+  }
 }
+
 window.addEventListener("scroll", scrollUp);
 
-/*==================== SCROLL REVEAL ====================*/
+// Panggil fungsi saat halaman dimuat
+scrollUp();
 
+/*==================== SCROLL REVEAL ====================*/
 const scrollRevealOption = {
   distance: "50px",
   duration: 2000,
@@ -78,7 +98,6 @@ ScrollReveal().reveal(".home__data", {
 ScrollReveal().reveal(".bestseller__data", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 300,
 });
 
 ScrollReveal().reveal(".journey__data", {
@@ -89,13 +108,11 @@ ScrollReveal().reveal(".journey__data", {
 ScrollReveal().reveal(".journey__img-overlay", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 200,
 });
 
 ScrollReveal().reveal(".review__subtitlegrup", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 300,
 });
 
 ScrollReveal().reveal(".customer__content", {
@@ -103,3 +120,29 @@ ScrollReveal().reveal(".customer__content", {
   origin: "top",
   interval: 200,
 });
+
+/*==================== WHATS APP POP UP ====================*/
+// Pilih elemen popup WhatsApp dan footer
+const whatsappPopup = document.getElementById("whatsapp-popup");
+const footer = document.getElementById("footer-rights");
+
+// Fungsi untuk mengecek posisi scroll
+function checkScrollPosition() {
+  // Posisi bawah dari jendela viewport
+  const windowBottom = window.innerHeight + window.scrollY;
+  // Posisi atas dari footer
+  const footerTop = footer.offsetTop;
+
+  // Jika posisi bawah jendela melebihi posisi atas footer, sembunyikan popup
+  if (windowBottom >= footerTop) {
+    whatsappPopup.style.display = "none";
+  } else {
+    whatsappPopup.style.display = "block";
+  }
+}
+
+// Tambahkan event listener untuk scroll
+window.addEventListener("scroll", checkScrollPosition);
+
+// Panggil fungsi saat halaman dimuat
+checkScrollPosition();
