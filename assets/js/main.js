@@ -63,30 +63,6 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 /*==================== SCROLL REVEAL ====================*/
-// const sr = ScrollReveal({
-//   distance: "50px",
-//   duration: 1000,
-//   reset: true,
-// });
-
-// sr.reveal(`.home__data`, {
-//   origin: "top",
-//   interval: 100,
-// });
-
-// sr.reveal(`.journey__data`, {
-//   origin: "left",
-// });
-
-// sr.reveal(`.journey__img-overlay`, {
-//   origin: "right",
-//   interval: 100,
-// });
-
-// sr.reveal(`.customer__img`, {
-//   origin: "top",
-//   delay: 100,
-// });
 
 const scrollRevealOption = {
   distance: "50px",
@@ -102,7 +78,7 @@ ScrollReveal().reveal(".home__data", {
 ScrollReveal().reveal(".bestseller__data", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 100,
+  delay: 300,
 });
 
 ScrollReveal().reveal(".journey__data", {
@@ -119,7 +95,7 @@ ScrollReveal().reveal(".journey__img-overlay", {
 ScrollReveal().reveal(".review__subtitlegrup", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 400,
+  delay: 300,
 });
 
 ScrollReveal().reveal(".customer__content", {
