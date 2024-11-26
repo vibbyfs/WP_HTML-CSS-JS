@@ -336,8 +336,9 @@ a {
 
 /* ============= JOURNEY PAGE ============= */
 .journey__container {
+  margin: 0;
   padding: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue-dark);
 }
 
 .journey__data {
@@ -345,9 +346,14 @@ a {
   color: var(--grey-dark);
 }
 
+.journey__subtitle {
+  color: var(--white);
+}
+
 .journey__title span {
   font-size: 1.2rem;
   font-weight: 900;
+  color: var(--white);
 }
 
 .journey__img {
@@ -426,7 +432,7 @@ a {
 
 /* ============= CUSTOMER PAGE ============= */
 .customer__container1 {
-  margin: 0 1rem;
+  margin: 0;
   padding: 2rem 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
