@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wicked Pies</title>
+    <!-- MY FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER PAGE -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Wicked Pies</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="menu.html" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="store.html" class="nav__link">Store</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="whatsapp-btn" id="whatsapp-popup">
+      <div class="whatsapp-btn-container">
+        <a
+          class="whatsapp-us-btn"
+          href="https://api.whatsapp.com/send?phone=6281398560476"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <span>Whatsapp Us!</span>
+      </div>
+    </div>
+    <!-- HEADER END -->
+
+    <main class="main">
+      <!-- HOME PAGE -->
+      <section class="home" id="home">
+        <img src="./assets/img/bg_home.jpg" alt="" class="home__img" />
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__subtitle">Say Wicked!</h1>
+            <p class="home__title">
+              Every pie we made is a work of art. Our pies hancrafted with
+              passion and love by our dedicated kitchen team.
+            </p>
+            <div class="home__btn">
+              <button class="home__button">
+                <a href="#">Marketplace</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HOME PAGE END -->
+
+      <!-- BEST SELLER PAGE -->
+      <section class="bestseller section" id="bestseller">
+        <div class="bestseller__data">
+          <h2 class="section__title1">Our Customer Really Like It!</h2>
+          <p class="section__title2">
+            They praise its quality, delicious flavor, and perfect crust. They
+            absolutely love our pie.
+          </p>
+        </div>
+        <div class="bestseller__container container swiper">
+          <div class="swiper-wrapper">
+            <!--==================== BEST SELLER 1 ====================-->
+            <div class="bestseller__card swiper-slide">
+              <img
+                src="./assets/img/menu/fsm.webp"
+                alt=""
+                class="bestseller__img"
+              />
+            </div>
+
+            <!--==================== BEST SELLER 2 ====================-->
+            <div class="bestseller__card swiper-slide">
+              <img
+                src="./assets/img/menu/kgw.webp"
+                alt=""
+                class="bestseller__img"
+              />
+            </div>
+
+            <!--==================== BEST SELLER 3 ====================-->
+            <div class="bestseller__card swiper-slide">
+              <img
+                src="./assets/img/menu/rcp.webp"
+                alt=""
+                class="bestseller__img"
+              />
+            </div>
+          </div>
+          <div class="bestseller-pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- BEST SELLER END-->
+
+      <!-- JOURNEY PAGE-->
+      <section class="journey section" id="journey">
+        <div class="journey__container container">
+          <div class="journey__data">
+            <h2 class="journey__subtitle section__title1">Our Journey!</h2>
+            <p class="journey__title section__title2">
+              We're beyond thrilled! Over <span>1M+</span> pie sold, and it's
+              all because of you. Here is to continuing this incredible journey
+              together.
+            </p>
+          </div>
+
+          <div class="journey__img">
+            <img
+              src="./assets/img/ourjourney.png"
+              alt=""
+              class="journey__img-overlay"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- JOURNEY END-->
+
+      <!-- REVIEW PAGE-->
+      <section class="review section" id="review">
+        <div class="review__subtitlegrup">
+          <h2 class="review__subtitle section__title1">
+            Their Stories About Us
+          </h2>
+          <p class="review__subtitle section__title2">
+            Great things are happening! Can not wait to share more with you.
+          </p>
+        </div>
+        <div class="review__container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="review__card swiper-slide">
+              <div class="review__card-main">
+                <span><i class="fa-solid fa-quote-right"></i></span>
+                <div class="review__content">
+                  <h3>Crunchy</h3>
+                  <p>
+                    The best thing about this snack is its crunch! that keeps
+                    you coming back for more.
+                  </p>
+                </div>
+                <div class="review__imgdata">
+                  <div class="review__img">
+                    <img
+                      src="./assets/img/user/user1.jpg"
+                      alt=""
+                      class="review__img-cust"
+                    />
+                  </div>
+                  <div class="review__data">
+                    <h4 class="review__name">Albert</h4>
+                    <h4 class="review__location">West Jakarta</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__card swiper-slide">
+              <div class="review__card-main">
+                <span><i class="fa-solid fa-quote-right"></i></span>
+                <div class="review__content">
+                  <h3>Yummy</h3>
+                  <p>
+                    This dish is absolutely yummy! The flavors burst in your
+                    mouth, leaving you craving for more. It's comfort food at
+                    its finest!
+                  </p>
+                </div>
+                <div class="review__img">
+                  <img
+                    src="./assets/img/user/user2.jpg"
+                    alt=""
+                    class="review__img-cust"
+                  />
+                </div>
+                <div class="review__data">
+                  <h4 class="review__name">Behtany</h4>
+                  <h4 class="review__location">Central Jakarta</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__card swiper-slide">
+              <div class="review__card-main">
+                <span><i class="fa-solid fa-quote-right"></i></span>
+                <div class="review__content">
+                  <h3>Flavorful</h3>
+                  <p>
+                    This dish is bursting with flavor! Each bite offers a
+                    symphony of tastes that dance on your tongue.
+                  </p>
+                </div>
+                <div class="review__img">
+                  <img
+                    src="./assets/img/user/user3.jpg"
+                    alt=""
+                    class="review__img-cust"
+                  />
+                </div>
+                <div class="review__data">
+                  <h4 class="review__name">Charlotte</h4>
+                  <h4 class="review__location">East Jakarta</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-pagination"></div>
+        </div>
+      </section>
+      <!-- REVIEW END -->
+
+      <!-- CUSTOMER PAGE-->
+      <section class="customer section">
+        <div class="customer__container1">
+          <h2 class="section__title1">Used To Be Our Customer</h2>
+          <p class="section__title2">
+            Our Customers, Our Heroes! Thank you for being a part of our
+            journey.
+          </p>
+          <div class="customer__container container grid">
+            <div class="customer__data">
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/cocacola.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/arturos.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/cremhelado.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/lexus.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/Pizzahut.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/redbull.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+
+              <div class="customer__content">
+                <img
+                  src="./assets/img/our_customer/starbucks.png"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CUSTOMER END-->
+    </main>
+
+    <!-- FOOTER PAGE -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">About</h3>
+            <p class="footer__description">
+              Every pie we made is a work of art. Our pies hancrafted with
+              passion and love by our dedicated kitchen team.
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__title">Contact</h3>
+            <div class="footer__contact">
+              <span><i class="fa-brands fa-square-whatsapp"></i></span>
+              <p class="footer__description">+62 813 9938 9182</p>
+            </div>
+            <div class="footer__contact">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p class="footer__description">wickedpies@gmail.com</p>
+            </div>
+            <div class="footer__contact">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p class="footer__description">
+                Head Office, Gedong Panjang No.20H, Pekojan, Tambora, West
+                Jakarta, DKI Jakarta 11240
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__rights" id="footer-rights">
+        <p class="footer__copy">
+          &#169; 2024 Wicked Pies. All rigths reserved.
+        </p>
+        <div class="footer__terms">
+          <a href="#" class="footer__terms-link">Terms & Agreements</a>
+          <a href="#" class="footer__terms-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SCROLL UP -->
+    <a href="" class="scrollup" id="scroll-up"
+      ><i class="fa-solid fa-arrow-up scrollup__icon"></i
+    ></a>
+
+    <!-- SCROLL REVEAL -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- MY SCRIPT -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
