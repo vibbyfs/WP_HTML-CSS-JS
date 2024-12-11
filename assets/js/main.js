@@ -121,12 +121,6 @@ ScrollReveal().reveal(".customer__content", {
   interval: 100,
 });
 
-ScrollReveal().reveal(".card__available", {
-  ...scrollRevealOption,
-  origin: "top",
-  interval: 100,
-});
-
 ScrollReveal().reveal(".detail__1", {
   ...scrollRevealOption,
   origin: "left",
