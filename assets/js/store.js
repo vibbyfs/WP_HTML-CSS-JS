@@ -110,11 +110,11 @@ const scrollRevealOption = {
   reset: true,
 };
 
-ScrollReveal().reveal(".store__data", {
-  ...scrollRevealOption,
-  origin: "top",
-  interval: 100,
-});
+// ScrollReveal().reveal(".store__data", {
+//   ...scrollRevealOption,
+//   origin: "top",
+//   interval: 100,
+// });
 
 /*==================== STORE FILTER AND SORT ====================*/
 const storeFilterButton = document.querySelectorAll(
