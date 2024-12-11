@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wicked Pies</title>
+    <!-- MY FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER PAGE -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo differencecolor__logo">Wicked Pies</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list differencecolor__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="menu.html" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="store.html" class="nav__link">Store</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle differencecolor__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="whatsapp-btn" id="whatsapp-popup">
+      <div class="whatsapp-btn-container">
+        <a
+          class="whatsapp-us-btn"
+          href="https://api.whatsapp.com/send?phone=6281398560476"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <span>Whatsapp Us!</span>
+      </div>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- STORE -->
+    <section class="store" id="store">
+      <main class="store__main">
+        <div class="store__header">
+          <h1>Our Store</h1>
+          <div class="store__title">
+            <div class="store__data">
+              <img src="./assets/img/store.png" alt="" />
+              <h2>All Store - 13</h2>
+            </div>
+            <div class="store__data">
+              <img src="./assets/img/store.png" alt="" />
+              <h2>Central Jakarta - 2</h2>
+            </div>
+            <div class="store__data">
+              <img src="./assets/img/store.png" alt="" />
+              <h2>South Jakarta - 6</h2>
+            </div>
+            <div class="store__data">
+              <img src="./assets/img/store.png" alt="" />
+              <h2>West Jakarta - 3</h2>
+            </div>
+            <div class="store__data">
+              <img src="./assets/img/store.png" alt="" />
+              <h2>Surabaya - 2</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="store__container container">
+          <div class="store__search__dropdown">
+            <div class="store__search__container">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input
+                type="text"
+                id="storeSearchInput"
+                class="store__search__input"
+                placeholder="Search Store"
+              />
+              <button id="storeClearButton" class="store__clear__button">
+                &times;
+              </button>
+            </div>
+
+            <div class="store__dropdown">
+              <button class="store__dropbtn" id="storeDropBtn">
+                Filter and Sort
+              </button>
+              <div
+                class="store__dropdown__content store__hidden"
+                id="storeDropdownContent"
+              >
+                <div class="store__filter__options">
+                  <p>Select Category</p>
+                  <button class="store__button" data-name="all">
+                    All <span>(13)</span>
+                  </button>
+                  <button class="store__button" data-name="Jakarta Pusat">
+                    Central Jakarta <span>(2)</span>
+                  </button>
+                  <button class="store__button" data-name="Jakarta Selatan">
+                    South Jakarta <span>(6)</span>
+                  </button>
+                  <button class="store__button" data-name="Jakarta Barat">
+                    West Jakarta <span>(3)</span>
+                  </button>
+                  <button class="store__button" data-name="Surabaya">
+                    Surabaya <span>(2)</span>
+                  </button>
+                </div>
+                <div class="store__sort__options">
+                  <p>Sort Store</p>
+                  <button id="sortAToZ">A to Z</button>
+                  <button id="sortZToA">Z to A</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="store__content">
+            <div class="store__filter__card">
+              <div class="store__card" data-name="Jakarta Pusat">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Grand Indonesia</h5>
+                  <p>
+                    Grand Indonesia, LG Floor East Mall, Menteng, Menteng, DKI
+                    Jakarta 10310
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-gri">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Grand Lucky</h5>
+                  <p>
+                    GrandLucky Superstore SCBD, Jendral Sudirman Kav. 52-53,
+                    Senayan, Kebayoran Baru, South Jakarta, DKI Jakarta 12190
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-grl">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Hero Kemang</h5>
+                  <p>
+                    Hero Kemang Villa, Kemang Selatan I, Bangka, Mampang
+                    Prapatan, South Jakarta, DKI Jakarta 12730
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-hkg">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Lippo Mall Kemang</h5>
+                  <p>
+                    Lippo Mall Kemang, LG floor, Pangeran Antasari No.36,
+                    Bangka, South Jakarta, DKI Jakarta 12150
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-lmk">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Barat">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Lippo Mall Puri</h5>
+                  <p>
+                    Atrium 2 Mall Puri, Puri Indah Raya 2nd Floor, Puri,
+                    Kembangan, West Jakarta, DKI Jakarta 11610
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-lmp">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Barat">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Mall Taman Anggrek</h5>
+                  <p>
+                    Mall Taman Anggrek, Tanjung Duren Selatan, Grogol
+                    petamburan, West Jakarta, DKI Jakarta 11470
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-mta">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Pacific Place</h5>
+                  <p>
+                    Pacific Place Mall, LG Floor, Jenderal Sudirman, SCBD,
+                    Kebayoran Baru, South Jakarta, DKI Jakarta
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-ppl">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Barat">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Pesanggrahan</h5>
+                  <p>
+                    Ranch Market Pesanggrahan, 1st Floor, Pesanggrahan Raya No.
+                    2, Kembangan Selatan, Kembangan, East Jakarta, DKI Jakarta
+                    11610
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-psg">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Pusat">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Plaza Indonesia</h5>
+                  <p>
+                    Plaza Indonesia, 4th Floor, M.H. Thamrin, Gondangdia,
+                    Menteng, Central Jakarta, DKI Jakarta 10350
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-pzi">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Plaza Setia Budi</h5>
+                  <p>
+                    Plaza Setiabudi One, 1st Floor, H.R. Rasuna Said Kav. 62,
+                    Kuningan, Karet Kuningan, Setiabudi, South Jakarta, DKI
+                    Jakarta 12920
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-stb">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Jakarta Selatan">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Pondok Indah Mall 3</h5>
+                  <p>
+                    Pondok Indah Mall 3, 3rd Floor, Sultan Iskandar Muda,
+                    Pinang, Kebayoran Lama, South Jakarta, DKI Jakarta 12310
+                  </p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-pim">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Surabaya">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Pakuwon Mall</h5>
+                  <p>Pakuwon Mall, Lontar, Sambikerep, Surabaya 60216</p>
+                </div>
+                <div class="store__card__viewdetail">
+                  <a href="#store-sby2">View Detail</a>
+                </div>
+              </div>
+
+              <div class="store__card" data-name="Surabaya">
+                <div class="store__card__img">
+                  <img src="./assets/img/store.png" alt="" />
+                </div>
+                <div class="store__card__detail">
+                  <h5>Tunjangan Plaza</h5>
+                  <p>
+                    Tunjungan Plaza 6, 2nd Floor, Basuki Rahmat No. 8-12,
+                    Tegalsari, Surabaya
+                  </p>
+                  <div class="store__card__viewdetail">
+                    <a href="#store-sby1">View Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <div class="popup">
+      <div class="store__popup" id="store-sby1">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15831.274556581835!2d112.7385496!3d-7.2614707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9dcaf9fb553%3A0xdddd777241cb10cf!2sWicked%20Pies%20-%20Tunjungan%20Plaza%206!5e0!3m2!1sen!2sid!4v1731426278301!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-sby2">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15830.377227174877!2d112.6746862!3d-7.2869136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fd6b89c228f9%3A0x924d8208709b147b!2sWicked%20Pies!5e0!3m2!1sen!2sid!4v1731514514827!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-pim">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.004505592399!2d106.77808217370064!3d-6.263135461314082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f10067d25d3f%3A0xc927f0bdc66c2484!2sWicked%20Pies!5e0!3m2!1sen!2sid!4v1731514954656!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-stb">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3665714112126!2d106.82747577369993!3d-6.215293560874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f50ec191c2dd%3A0xff9324992f9ef4b1!2sWickedpies%20Plaza%20Setia%20Budi!5e0!3m2!1sen!2sid!4v1731515024521!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-pzi">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.533967675816!2d106.8195429736996!3d-6.193050060671287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5396f1f6add%3A0x72201c1f04f79af8!2sWicked%20Pies%20Plaza%20Indonesia!5e0!3m2!1sen!2sid!4v1731515075808!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-psg">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5681934262843!2d106.75357557369955!3d-6.188492360629795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f77f0c9d5a45%3A0xdbb722766515741e!2sWicked%20Pies%20Pesanggrahan!5e0!3m2!1sen!2sid!4v1731515132720!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-ppl">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.297240923603!2d106.80769797370004!3d-6.224482960958563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f151104aee2b%3A0xc4a608b34b5f03cc!2sPacific%20Place%20Mall!5e0!3m2!1sen!2sid!4v1731515764444!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-mta">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6390432362937!2d106.78791166791719!3d-6.179046946833792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7fbb77ca8c1%3A0xd59e24ed98f04a4d!2sWicked%20Pies!5e0!3m2!1sen!2sid!4v1731515326074!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-lmp">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578008880146!2d106.7328750736994!3d-6.1871846606178496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f729c64478ed%3A0x21e56e9d0143d8f0!2sWicked%20Pies%20Lippo%20Mall%20Puri!5e0!3m2!1sen!2sid!4v1731515384944!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-lmk">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0198867669983!2d106.80988707370062!3d-6.261110461295367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f56992f80ea9%3A0x4d0c37a2ec5da15!2sWicked%20Pies!5e0!3m2!1sen!2sid!4v1731515435704!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-hkg">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9888101708025!2d106.8180580737007!3d-6.2652011613331124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f31d2bc3af91%3A0xe6bd8dd7a7b66329!2sWicked%20Pies%20Hero%20Kemang!5e0!3m2!1sen!2sid!4v1731515482032!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-grl">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.276595112206!2d106.80092826792064!3d-6.227216847168613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11b1d918d93%3A0xf6c0ef90e78ebde7!2sWicked%20Pies%20Grand%20Lucky!5e0!3m2!1sen!2sid!4v1731515527200!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="store__popup" id="store-gri">
+        <div class="store__popup__content">
+          <div class="store__popup__img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5127376212154!2d106.81209232695313!3d-6.195875499999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f70ac113b5bf%3A0xe54b2f46b99f9294!2sWicked%20Pies%20Grand%20Indonesia!5e0!3m2!1sen!2sid!4v1731515579208!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a href="#" class="store__popup__close">&times;</a>
+          <div class="store__popup__text">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10.00 am-09.00 pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER PAGE -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">About</h3>
+            <p class="footer__description">
+              Every pie we made is a work of art. Our pies hancrafted with
+              passion and love by our dedicated kitchen team.
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__title">Contact</h3>
+            <div class="footer__contact">
+              <span><i class="fa-brands fa-square-whatsapp"></i></span>
+              <p class="footer__description">+62 813 9938 9182</p>
+            </div>
+            <div class="footer__contact">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p class="footer__description">wickedpies@gmail.com</p>
+            </div>
+            <div class="footer__contact">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p class="footer__description">
+                Head Office, Gedong Panjang No.20H, Pekojan, Tambora, West
+                Jakarta, DKI Jakarta 11240
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__title">Links</h3>
+            <div class="footer__link">
+              <a href="index.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="store.html">Store</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__rights" id="footer-rights">
+        <p class="footer__copy">
+          &#169; 2024 Wicked Pies. All rigths reserved.
+        </p>
+        <div class="footer__terms">
+          <a href="#" class="footer__terms-link">Terms & Agreements</a>
+          <a href="#" class="footer__terms-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SCROLL UP -->
+    <a href="" class="scrollup" id="scroll-up"
+      ><i class="fa-solid fa-arrow-up scrollup__icon"></i
+    ></a>
+
+    <!-- SCROLL REVEAL -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- MY SCRIPT -->
+    <script src="./assets/js/store.js"></script>
+  </body>
+</html>
